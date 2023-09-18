@@ -19,8 +19,11 @@ const NavBar = () => {
 
   return (
     <nav className="p-8 text-xl font-bold md:flex bg-gray-500">
-      <div className="text-3xl font-semibold text-orange-300 md:hidden" onClick={() => setOpen(!open)}>
-        {open === true ? <AiOutlineClose></AiOutlineClose>: <BiMenuAltRight></BiMenuAltRight> }
+      <div
+        className="text-3xl font-semibold text-orange-300 md:hidden"
+        onClick={() => setOpen(!open)}
+      >
+        {open === true ? <AiOutlineClose></AiOutlineClose> : <BiMenuAltRight></BiMenuAltRight>}
       </div>
       <ul
         className={`ml-8 absolute md:static md:flex bg-gray-500 p-5 rounded-xl duration-1000 ${
